@@ -4,7 +4,7 @@ Documentação para configuração de servidores
 
 ## Configurando IIS para Django (Python)
 
-### Preparando o ambinte
+### Preparando o ambiente
 Para que o projeto em Django (Python) rode no servidor, precisamos instalar algumas dependências listadas abaixo:
 
 1. Instalar o Python:
