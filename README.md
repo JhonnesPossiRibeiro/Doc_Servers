@@ -75,7 +75,7 @@ Para publicar o projeto siga os passos abaixo:
        PORTA_DJANGO="7002"
        DOMINIO_REACT="site.domain.lan"
        PORTA_REACT="3000" ```
-8. Configurar o web.config, seguindo os passos do HttpHandler: 
+8. Configurar o web.config, seguindo os passos do HttpHandler: https://learn.microsoft.com/pt-br/visualstudio/python/configure-web-apps-for-iis-windows?view=vs-2022.
    * a) Exemplo de web.config:
    ```
     <?xml version="1.0" encoding="UTF-8"?>
