@@ -1,15 +1,15 @@
 # Doc_Servers
 Documentação para configuração de servidores
 
+
+## Configurando IIS para Django (Python)
+
 ### Preparando o ambinte
 Para que o projeto em Django (Python), rode no servidor, precisamos instar algumas dependências listadas abaixo:
 
-
-
-## Configurando IIS para Django (Python)
+### Criar um site:
 Para criar um site no IIS para backend em Django (Python) siga os passos abaixo:
 
-### Criar um site:
 1. Botão direito do mouse sobre o **Sites**, escolha a opção **Add WebSites**;
 2. Informe um nome para o site **Site name**;
 3. A **Application pool** será criada com o mesmo nome do site;
