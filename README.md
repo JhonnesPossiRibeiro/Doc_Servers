@@ -75,5 +75,27 @@ Para publicar o projeto siga os passos abaixo:
        PORTA_DJANGO="7002"
        DOMINIO_REACT="site.domain.lan"
        PORTA_REACT="3000" ```
-
+8. Configurar o web.config, seguindo os passos do HttpHandler: 
+   * a) Exemplo de web.config:
+   ```
+    <?xml version="1.0" encoding="UTF-8"?>
+    <configuration>
+        <system.webServer>
+            <httpPlatform processPath="D:\inetpub\wwwroot\IntranetBackend\venv\Scripts\python.exe" arguments="D:\inetpub\wwwroot\IntranetBackend\manage.py runserver %HTTP_PLATFORM_PORT%" stdoutLogEnabled="true"           stdoutLogFile="D:\inetpub\wwwroot\IntranetBackend\logs\logs">
+                <environmentVariables>
+                    <environmentVariable name="%HTTP_PLATAFORM_PORT%" value="SERVER_PORT" />
+                </environmentVariables>
+            </httpPlatform>
+            <handlers>
+                <add name="Python" path="*.py" verb="*" modules="CgiModule" scriptProcessor="C:\Python\python.exe %s %s" resourceType="File" />
+                <add name="handler-python" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified" requireAccess="Script" />
+            </handlers>
+        </system.webServer>
+        <appSettings>
+            <add key="PYTHONPATH" value="D:\inetpub\wwwroot\IntranetBackend\smy" />
+            <add key="WSGI_HANDLER" value="django.core.wsgi.get_wsgi_application()" />
+            <add key="DJANGO_SETTINGS_MODULE" value="smy.settings" />
+        </appSettings>
+    </configuration>
+   ```
 
