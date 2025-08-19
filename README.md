@@ -45,35 +45,35 @@ Para publicar o projeto siga os passos abaixo:
   * b) Execute no terminal: pip install "pacote da linha 25 no aquivo requirements.txt";
 7. Após isso verificar o arquivo .env pois ele direciona o acesso ao banco que quais URLs podem ser buscar os dados via API:
   * a) Exemplo de arquivo .env:
-       * AMBIENTE=PROD
+       ``` AMBIENTE=PROD
 
-      * # Caminho no sistema de arquivos para o cache do Django.
-      * FS_CACHE_LOCATION="D:\inetpub\wwwroot\IntranetBackend\cache\"
+       # Caminho no sistema de arquivos para o cache do Django.
+       FS_CACHE_LOCATION="D:\inetpub\wwwroot\IntranetBackend\cache\"
 
-      * # Para usuário da intranet/aplicação.
-      * DB_INTRANET_USERNAME=user
-      * DB_INTRANET_PASSWORD="pass"
+       # Para usuário da intranet/aplicação.
+       DB_INTRANET_USERNAME=user
+       DB_INTRANET_PASSWORD="pass"
 
-      * # Para usuário de banco "consinco", usado para obter models.
-      * DB_CONSINCO_SCHEMA=schema
-      * DB_CONSINCO_USERNAME=user
-      * DB_CONSINCO_PASSWORD=pass
+       # Para usuário de banco "consinco", usado para obter models.
+       DB_CONSINCO_SCHEMA=schema
+       DB_CONSINCO_USERNAME=user
+       DB_CONSINCO_PASSWORD=pass
 
-      * # Configurações gerais do servidor do banco de dados da intranet.
-      * DB_NAME=orcl
-      * DB_HOST=xx.xx.x.xx
-      * DB_PORT=1521
+       # Configurações gerais do servidor do banco de dados da intranet.
+       DB_NAME=orcl
+       DB_HOST=xx.xx.x.xx
+       DB_PORT=1521
 
-      * # Configurações do AD.
-      * DOMINIO_AD="domain.lan"
-      * USUARIO_AD_INTRANET="user"
-      * SENHA_USUARIO_AD_INTRANET="pass"
+       # Configurações do AD.
+       DOMINIO_AD="domain.lan"
+       USUARIO_AD_INTRANET="user"
+       SENHA_USUARIO_AD_INTRANET="pass"
 
-      * # Configurações de domínios das aplicações WEB.
+       # Configurações de domínios das aplicações WEB.
 
-      * DOMINIO_DJANGO="site.dominan.lan"
-      * PORTA_DJANGO="7002"
-      * DOMINIO_REACT="site.domain.lan"
-      * PORTA_REACT="3000"
+       DOMINIO_DJANGO="site.dominan.lan"
+       PORTA_DJANGO="7002"
+       DOMINIO_REACT="site.domain.lan"
+       PORTA_REACT="3000" ```
 
 
