@@ -47,10 +47,10 @@ Para publicar o projeto siga os passos abaixo:
   * a) Exemplo de arquivo .env:
        AMBIENTE=PROD
 
-      # Caminho no sistema de arquivos para o cache do Django.
+      '# Caminho no sistema de arquivos para o cache do Django.
       FS_CACHE_LOCATION="D:\inetpub\wwwroot\IntranetBackend\cache\"
 
-      # Para usuário da intranet/aplicação.
+      '# Para usuário da intranet/aplicação.
       DB_INTRANET_USERNAME=user
       DB_INTRANET_PASSWORD="pass"
 
