@@ -35,6 +35,9 @@ Para criar um site no IIS para backend em Django (Python) siga os passos abaixo:
 ### Projeto Django
 Para publicar o projeto siga os passos abaixo:
 
-1. Copiar o código do projeto Django, sem a pasta venv (ambiente virtual) da máquina local para a pasta do site criado acima;
+1. Copiar o **código do projeto Django**, sem a pasta **venv** (ambiente virtual) da máquina local para a pasta do site criado acima;
+2. Abrir o **Powershell** como adim na pasta do projeto;
+3. Criar o ambiente virtual (.venv): **python -m venv .venv**;
+4. 
 
 
