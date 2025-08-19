@@ -98,4 +98,5 @@ Para publicar o projeto siga os passos abaixo:
         </appSettings>
     </configuration>
    ```
-
+9. Para testar o projeto Django (Python): ```python manage.py runserver```;
+   * a) Caso gere um erro, por exemplo: ModuleNotFoundError: No module named 'decouple', repetir os passos 6-b para instalar as pendências;
