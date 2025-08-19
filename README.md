@@ -37,12 +37,12 @@ Para publicar o projeto siga os passos abaixo:
 
 1. Copiar o **código do projeto Django**, sem a pasta **venv** (ambiente virtual) da máquina local para a pasta do site criado acima;
 2. Abrir o **Powershell** como adim na pasta do projeto;
-3. Criar o ambiente virtual (.venv): **python -m venv .venv**;
-4. Ativar o ambiente virtual (.venv): **.\.venv\Scripts\activate**;
-5. Instale as bibliotecas que estão no arquivo de requerimento o requirements.txt rodando o comando: **pip install -r requirements.txt**;
+3. Criar o ambiente virtual (.venv): ```python -m venv .venv*```;
+4. Ativar o ambiente virtual (.venv): ```.\.venv\Scripts\activate```;
+5. Instale as bibliotecas que estão no arquivo de requerimento o requirements.txt rodando o comando: ```pip install -r requirements.txt```;
 6. Caso apresente erro na instalação dos pacotes, verifique o retorno do erro e instale a parte as pendências;
   * a) Exemplo: ERROR: Cannot install -r requirements.txt (line 25);
-  * b) Execute no terminal: pip install "pacote da linha 25 no aquivo requirements.txt";
+  * b) Execute no terminal: ```pip install "pacote da linha 25 no aquivo requirements.txt"```;
 7. Após isso verificar o arquivo .env pois ele direciona o acesso ao banco que quais URLs podem ser buscar os dados via API:
   * a) Exemplo de arquivo .env:
        ``` AMBIENTE=PROD
@@ -54,7 +54,7 @@ Para publicar o projeto siga os passos abaixo:
        DB_INTRANET_USERNAME=user
        DB_INTRANET_PASSWORD="pass"
 
-       # Para usuário de banco "consinco", usado para obter models.
+       # Para usuário de banco, usado para obter models.
        DB_CONSINCO_SCHEMA=schema
        DB_CONSINCO_USERNAME=user
        DB_CONSINCO_PASSWORD=pass
