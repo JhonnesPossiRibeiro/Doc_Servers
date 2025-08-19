@@ -40,6 +40,6 @@ Para publicar o projeto siga os passos abaixo:
 3. Criar o ambiente virtual (.venv): **python -m venv .venv**;
 4. Ativar o ambiente virtual (.venv): **.\.venv\Scripts\activate**;
 5. Instale as bibliotecas que estão no arquivo de requerimento o requirements.txt rodando o comando: **pip install -r requirements.txt**;
-6. 
+6. Caso apresente erro na instalação dos pacotes, verifique o retorno do erro e instale a parte as pendências;
 
 
