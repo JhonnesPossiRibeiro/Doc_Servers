@@ -161,12 +161,10 @@ Para a utlização do Celery no projeto Django (Python), siga os passo abaixo:
 2. No arquivo importe o Celery e crie uma função, por exemplo:
    ```
    from celery import Celery
-
-app = Celery('tasks', broker='pyamqp://guest@localhost//')
-
-@app.task
-def add(x, y):
-    return x + y
+   app = Celery('tasks', broker='pyamqp://guest@localhost//')
+   @app.task
+   def add(x, y):
+       return x + y
    ```
 
 
