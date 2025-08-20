@@ -106,6 +106,8 @@ Link de referência: https://redis.io/blog/redis-on-windows-10.
 
 Para a instalação do Redis no Windows seguir os passos abaixo:
 
+### Ativar o Wsl no servidor e instalar o Ubuntu
+
 1. Abra o **PowerShell** como administrador;
 2. Execute o comando: ```Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux``` para instalar o recurso de sub-sistema linux no windows;
 3. Reiniciei o servidor para que tenha efeito;
@@ -115,5 +117,5 @@ Para a instalação do Redis no Windows seguir os passos abaixo:
 7. Após baixar e instalar, execute o comando ```wsl.exe -d Ubuntu```;
 8. Crie um usuário;
 9. Crie uma senha e confirme;
-10. 
+
 
