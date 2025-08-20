@@ -116,6 +116,16 @@ Para a instalação do Redis no Windows seguir os passos abaixo:
 6. No **PowerShell** digite o comando: ```wsl --install -d ubuntu``` para baixar a versão do Ubuntu;
 7. Após baixar e instalar, execute o comando ```wsl.exe -d Ubuntu```;
 8. Crie um usuário;
-9. Crie uma senha e confirme;
+9. Crie uma senha e confirme.
 
+### Instalando e testando o Redis
+Para a instalação do Redis siga os passos abaixo:
 
+1. No terminal do Ubuntu execute o comando: ```sudo apt-get update```;
+2. Informe a senha;
+3. No terminal do Ubuntu execute o comando: ```sudo apt-get upgrade```;
+4. Para instalar o redis execute o comando: ```sudo apt-get install redis-server```;
+5. Após a instalação verfique a versão: ```redis-cli -v```;
+6. Após execute o comando para reiniciar o servidor redis: ```sudo service redis-server restart```;
+7. Teste o redis com o comando: ```redis-cli```;
+8. Após abrir o server redis, digite: ping, retornará pong.
