@@ -146,11 +146,28 @@ Para instalar o **Nssm** siga os passos abaixo:
 2. Execute o comando listado na aplicação iniciando com ```.\```, por exemplo: ```.\nssm edit <servicename>```.
 
 ## Celery - Sistema em fila de tarefas
+Link da documentação referência: https://docs.celeryq.dev/en/v5.5.3/getting-started/introduction.html
 Para a utlização do Celery no projeto Django (Python), siga os passo abaixo:
 
 ### Instalando o pacote Celery
 
 1. Na pasta do projeto, abra o **PowerShell** como adim;
 2. Ative a .venv do projeto: ```.\.venv\Scripts\activate````;
-3. 
+3. Para instalar o pacote digite: ```pip install celery```;
+
+### Configurando o Celery
+
+1. Crie um arquivo task.py;
+2. No arquivo importe o Celery e crie uma função, por exemplo:
+   ```
+   from celery import Celery
+
+app = Celery('tasks', broker='pyamqp://guest@localhost//')
+
+@app.task
+def add(x, y):
+    return x + y
+   ```
+
+
 
