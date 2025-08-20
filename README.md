@@ -131,7 +131,16 @@ Para a instalação do **Redis** siga os passos abaixo:
 8. Após abrir o server redis, digite: ping, retornará pong.
 
 ### Nssm - o Gerenciador de Serviços Não-Sugador
+
+### Instalando Nssm
 Para instalar o **Nssm** siga os passos abaixo:
 
 1. Efetuar o download do Nssm no seguinte endereço: https://nssm.cc/download;
-2. 
+2. Descompactar o conteúdo e de preferência no caminho C:\Nssm;
+3. Na pasta C:\Nssm\Win64, execute o Nssm.exe, ele irá informar os comandos;
+
+### Criando, editando e deletando serviços
+
+1. Execute o **CMD** com admin e vá até a pasta onde esta o Nssm.exe;
+2. Execute o comando listado na aplicação iniciando com **.\**, por exemplo: ```.\nssm edit <servicename>```;
+3. 
