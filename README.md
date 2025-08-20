@@ -101,36 +101,19 @@ Para publicar o projeto siga os passos abaixo:
 9. Para testar o projeto Django (Python): ```python manage.py runserver```;
    * a) Caso gere um erro, por exemplo: ModuleNotFoundError: No module named 'decouple', repetir os passos 6-b para instalar as pendências;
 
-## Celery - Filas de Tarefas
-Link para consulta: https://docs.celeryq.dev/en/v5.5.3/getting-started/introduction.html
+## Redis - Armazenamento em memória
+Link de referência: https://redis.io/blog/redis-on-windows-10.
 
-### Instalando o Celery
-Para realizar a instalação e configuração do Celery, seguir os passos abaixo:
+Para a instalação do Redis no Windows seguir os passos abaixo:
 
-1. O Celery está no Índice de Pacotes Python (PyPI), portanto pode ser instalado com ferramentas Python padrão como pip: ```pip install celery```;
-
-### Aplicativo
-A primeira coisa que você precisa é de uma instância do Celery. Chamamos isso de aplicativo Celery , ou simplesmente app . Como essa instância é usada como ponto de entrada para tudo o que você deseja fazer no Celery, como criar tarefas e gerenciar trabalhadores, deve ser possível importá-la para outros módulos.
-Neste tutorial, manteremos tudo contido em um único módulo, mas para projetos maiores você desejará criar um módulo dedicado https://docs.celeryq.dev/en/v5.5.3/getting-started/next-steps.html#project-layout.
-
-Vamos criar o arquivo tasks.py:
-```
-from celery import Celery
-
-app = Celery('tasks', broker='pyamqp://guest@localhost//')
-
-@app.task
-def add(x, y):
-    return x + y
-```
-O primeiro argumento Celeryé o nome do módulo atual. Isso é necessário apenas para que os nomes possam ser gerados automaticamente quando as tarefas forem definidas no módulo __main__ .
-O segundo argumento é a palavra-chave do broker, que especifica a URL do broker de mensagens que você deseja usar. Aqui, estamos usando o RabbitMQ (também a opção padrão).
-Veja Escolhendo um corretor acima para mais opções – para RabbitMQ você pode usar amqp://localhost, ou para Redis você pode usar redis://localhost.
-Você definiu uma única tarefa, chamada add, retornando a soma de dois números.
-
-### Executando o servidor de trabalho Celery
-Agora você pode executar o trabalhador executando nosso programa com o worker argumento:
-```
-celery -A tasks worker --loglevel=INFO
-```
+1. Abra o **PowerShell** como administrador;
+2. Execute o comando: ```Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux``` para instalar o recurso de sub-sistema linux no windows;
+3. Reiniciei o servidor para que tenha efeito;
+4. Abra o **PowerShell** como administrador;
+5. Execute o comando: ```wslconfig``` o Windows irá reconhecer o comando;
+6. No **PowerShell** digite o comando: ```wsl --install -d ubuntu``` para baixar a versão do Ubuntu;
+7. Após baixar e instalar, execute o comando ```wsl.exe -d Ubuntu```;
+8. Crie um usuário;
+9. Crie uma senha e confirme;
+10. 
 
