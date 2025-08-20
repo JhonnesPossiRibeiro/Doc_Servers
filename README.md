@@ -100,3 +100,13 @@ Para publicar o projeto siga os passos abaixo:
    ```
 9. Para testar o projeto Django (Python): ```python manage.py runserver```;
    * a) Caso gere um erro, por exemplo: ModuleNotFoundError: No module named 'decouple', repetir os passos 6-b para instalar as pendências;
+
+## Celery
+Link para consulta: https://docs.celeryq.dev/en/v5.5.3/getting-started/introduction.html
+
+### Instalando o Celery
+Para realizar a instalação e configuração do Celery, seguir os passos abaixo:
+
+1. O Celery está no Índice de Pacotes Python (PyPI), portanto pode ser instalado com ferramentas Python padrão como pip: ```pip install celery```;
+2. 
+   
