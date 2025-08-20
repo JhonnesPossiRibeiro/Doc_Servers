@@ -99,12 +99,12 @@ Para publicar o projeto siga os passos abaixo:
     </configuration>
    ```
 9. Para testar o projeto Django (Python): ```python manage.py runserver```;
-   * a) Caso gere um erro, por exemplo: ModuleNotFoundError: No module named 'decouple', repetir os passos 6-b para instalar as pendências;
+   * a) Caso gere um erro, por exemplo: ModuleNotFoundError: No module named 'decouple', repetir os passos 6-b para instalar as pendências.
 
 ## Redis - Armazenamento em memória
 Link de referência: https://redis.io/blog/redis-on-windows-10.
 
-Para a instalação do Redis no Windows seguir os passos abaixo:
+Para a instalação do Redis no Windows Server 2022, seguir os passos abaixo:
 
 ### Ativar o Wsl no servidor e instalar o Ubuntu
 
@@ -138,12 +138,19 @@ Para instalar o **Nssm** siga os passos abaixo:
 
 1. Efetuar o download do Nssm no seguinte endereço: https://nssm.cc/download;
 2. Descompactar o conteúdo e de preferência no caminho C:\Nssm;
-3. Na pasta C:\Nssm\Win64, execute o Nssm.exe, ele irá informar os comandos;
+3. Na pasta C:\Nssm\Win64, execute o Nssm.exe, ele irá informar os comandos.
 
 ### Criando, editando e deletando serviços
 
 1. Execute o **CMD** com admin e vá até a pasta onde esta o Nssm.exe;
-2. Execute o comando listado na aplicação iniciando com ```.\```, por exemplo: ```.\nssm edit <servicename>```;
+2. Execute o comando listado na aplicação iniciando com ```.\```, por exemplo: ```.\nssm edit <servicename>```.
 
-## Celery
+## Celery - Sistema em fila de tarefas
+Para a utlização do Celery no projeto Django (Python), siga os passo abaixo:
+
+### Instalando o pacote Celery
+
+1. Na pasta do projeto, abra o **PowerShell** como adim;
+2. Ative a .venv do projeto: ```.\.venv\Scripts\activate````;
+3. 
 
