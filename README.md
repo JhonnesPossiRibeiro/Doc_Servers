@@ -130,7 +130,7 @@ Para a instalação do **Redis** siga os passos abaixo:
 7. Teste o redis com o comando: ```redis-cli```;
 8. Após abrir o server redis, digite: ping, retornará pong.
 
-### Nssm - o Gerenciador de Serviços Não-Sugador
+## Nssm - o Gerenciador de Serviços Não-Sugador
 Para o funcioanmento do Celery, faz se necessário a instalação do serviço no Windows com **Nssm**, pois o mesmo não inicia-se sozinho.
 
 ### Instalando Nssm
