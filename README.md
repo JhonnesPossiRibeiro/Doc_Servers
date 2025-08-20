@@ -101,12 +101,25 @@ Para publicar o projeto siga os passos abaixo:
 9. Para testar o projeto Django (Python): ```python manage.py runserver```;
    * a) Caso gere um erro, por exemplo: ModuleNotFoundError: No module named 'decouple', repetir os passos 6-b para instalar as pendências;
 
-## Celery
+## Celery - Filas de Tarefas
 Link para consulta: https://docs.celeryq.dev/en/v5.5.3/getting-started/introduction.html
 
 ### Instalando o Celery
 Para realizar a instalação e configuração do Celery, seguir os passos abaixo:
 
 1. O Celery está no Índice de Pacotes Python (PyPI), portanto pode ser instalado com ferramentas Python padrão como pip: ```pip install celery```;
-2. 
-   
+
+### Aplicativo
+A primeira coisa que você precisa é de uma instância do Celery. Chamamos isso de aplicativo Celery , ou simplesmente app . Como essa instância é usada como ponto de entrada para tudo o que você deseja fazer no Celery, como criar tarefas e gerenciar trabalhadores, deve ser possível importá-la para outros módulos.
+Neste tutorial, manteremos tudo contido em um único módulo, mas para projetos maiores você desejará criar um módulo dedicado .
+
+Vamos criar o arquivo tasks.py:
+```
+from celery import Celery
+
+app = Celery('tasks', broker='pyamqp://guest@localhost//')
+
+@app.task
+def add(x, y):
+    return x + y
+```
