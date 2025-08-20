@@ -123,3 +123,14 @@ app = Celery('tasks', broker='pyamqp://guest@localhost//')
 def add(x, y):
     return x + y
 ```
+O primeiro argumento Celeryé o nome do módulo atual. Isso é necessário apenas para que os nomes possam ser gerados automaticamente quando as tarefas forem definidas no módulo __main__ .
+O segundo argumento é a palavra-chave do broker, que especifica a URL do broker de mensagens que você deseja usar. Aqui, estamos usando o RabbitMQ (também a opção padrão).
+Veja Escolhendo um corretor acima para mais opções – para RabbitMQ você pode usar amqp://localhost, ou para Redis você pode usar redis://localhost.
+Você definiu uma única tarefa, chamada add, retornando a soma de dois números.
+
+### Executando o servidor de trabalho Celery
+Agora você pode executar o trabalhador executando nosso programa com o worker argumento:
+```
+celery -A tasks worker --loglevel=INFO
+```
+
