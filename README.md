@@ -119,7 +119,7 @@ Para a instalação do Redis no Windows seguir os passos abaixo:
 9. Crie uma senha e confirme.
 
 ### Instalando e testando o Redis
-Para a instalação do Redis siga os passos abaixo:
+Para a instalação do **Redis** siga os passos abaixo:
 
 1. No terminal do Ubuntu execute o comando: ```sudo apt-get update```;
 2. Informe a senha;
@@ -129,3 +129,9 @@ Para a instalação do Redis siga os passos abaixo:
 6. Após execute o comando para reiniciar o servidor redis: ```sudo service redis-server restart```;
 7. Teste o redis com o comando: ```redis-cli```;
 8. Após abrir o server redis, digite: ping, retornará pong.
+
+### Nssm - o Gerenciador de Serviços Não-Sugador
+Para instalar o **Nssm** siga os passos abaixo:
+
+1. Efetuar o download do Nssm no seguinte endereço: https://nssm.cc/download;
+2. 
