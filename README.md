@@ -111,7 +111,7 @@ Para realizar a instalação e configuração do Celery, seguir os passos abaixo
 
 ### Aplicativo
 A primeira coisa que você precisa é de uma instância do Celery. Chamamos isso de aplicativo Celery , ou simplesmente app . Como essa instância é usada como ponto de entrada para tudo o que você deseja fazer no Celery, como criar tarefas e gerenciar trabalhadores, deve ser possível importá-la para outros módulos.
-Neste tutorial, manteremos tudo contido em um único módulo, mas para projetos maiores você desejará criar um módulo dedicado .
+Neste tutorial, manteremos tudo contido em um único módulo, mas para projetos maiores você desejará criar um módulo dedicado https://docs.celeryq.dev/en/v5.5.3/getting-started/next-steps.html#project-layout.
 
 Vamos criar o arquivo tasks.py:
 ```
