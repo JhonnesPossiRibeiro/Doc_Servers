@@ -216,12 +216,35 @@ Para a utlização do Celery no projeto Django (Python), siga os passo abaixo:
 1. Crie um arquivo task.py;
 2. No arquivo importe o Celery e crie uma função, por exemplo:
    ```
-   from celery import Celery
-   app = Celery('tasks', broker='pyamqp://guest@localhost//')
-   @app.task
-   def add(x, y):
-       return x + y
+    from celery import Celery  
+    app = Celery(
+        "test_app",
+        broker="redis://localhost:6379/0",
+        backend="redis://localhost:6379/0"
+    )    
+    @app.task
+    def add(x, y):
+        return x + y    
+    if __name__ == "__main__":
+        # dispara a task
+        result = add.delay(4, 6)
+        print("Task enviada, esperando resultado...")    
+        print("Resultado:", result.get(timeout=10))
    ```
+3. Para realizar o teste do arquivo, abra o **PowerShell** na pasta do arquivo e digite o comando: ```python .\task.py```;
+4. Estando tudo certo, irá retornar 10. Obs: o Celery-Work deve estar executando no servidor.
+
+### Executando o CeleryWork automaticamente
+Para que o **CeleryWork** consuma a fila do **Redis**, siga os passos abaixo:
+
+1. Criar um serviço para o CeleryWork iniciar junto ao windows:
+   * a) Abrir o **PowerShell**, vá até a pasta C:\Nssm\Win64;
+   * b) Crie um serviço: ```.\Nssm install CeleryWork```;
+   * c) Preencha da seguinte forma:
+        * Application   
+        * Path: ```D:\inetpub\wwwroot\App\venv\Scripts\python.exe````;
+        * Startup directory: ```D:\inetpub\wwwroot\App```;
+        * Arguments: ```-m celery -A task worker --loglevel=info --pool=solo```;        
 
 
 
