@@ -130,6 +130,42 @@ Para a instalação do **Redis** siga os passos abaixo:
 7. Teste o redis com o comando: ```redis-cli```;
 8. Após abrir o server redis, digite: ping, retornará pong.
 
+### Testando o redis no servidor
+Para testar a conexão como Redis, siga os passos abaixo:
+
+1. Abrir a pasta c:\Meu_Teste_Redis no VsCode;
+2. Cria um ambiente virtual: ```python -m venv .venv```;
+3. Ative o ambiente virtual: ```.\.venv\Script\activate```;
+4. Instalar o pacote redis: ```pip install redis```;
+5. Crie um arquivo teste_redis.py, com o seguinte código:
+ ```
+import redis
+
+
+def main():
+    try:
+        # conecta no redis (ajuste host/port se necessário)
+        r = redis.Redis(host="localhost", port=6379, db=0)
+
+        # escreve um valor
+        r.set("teste_chave", "Olá Redis!")
+
+        # lê o valor
+        valor = r.get("teste_chave")
+
+        print("Valor armazenado no Redis:", valor.decode("utf-8"))
+
+    except Exception as e:
+        print("Erro ao conectar no Redis:", e)
+
+
+if __name__ == "__main__":
+    main()
+
+```
+7. Com o Ubuntu e o redis rodando, execute o compando: ```python .\teste_redis.py```;
+8. Estando tudo certo, irá retornar Olá redis.
+
 ## Nssm - o Gerenciador de Serviços Não-Sugador
 Para o funcioanmento do Celery, faz se necessário a instalação do serviço no Windows com **Nssm**, pois o mesmo não inicia-se sozinho.
 
