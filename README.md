@@ -232,7 +232,7 @@ Para a utlização do Celery no projeto Django (Python), siga os passo abaixo:
         print("Resultado:", result.get(timeout=10))
    ```
 3. Para realizar o teste do arquivo, abra o **PowerShell** na pasta do arquivo e digite o comando: ```python .\task.py```;
-4. Estando tudo certo, irá retornar 10. Obs: o Celery-Work deve estar executando no servidor.
+4. Estando tudo certo, irá retornar 10. Obs: o **CeleryWork** deve estar executando no servidor.
 
 ### Executando o CeleryWork automaticamente
 Para que o **CeleryWork** consuma a fila do **Redis**, siga os passos abaixo:
