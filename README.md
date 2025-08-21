@@ -218,7 +218,7 @@ Para a utlização do Celery no projeto Django (Python), siga os passo abaixo:
    ```
     from celery import Celery  
     app = Celery(
-        "test_app",
+        "task",
         broker="redis://localhost:6379/0",
         backend="redis://localhost:6379/0"
     )    
