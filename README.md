@@ -6,7 +6,7 @@ Documentação para configuração de servidores
    - [Preparando o ambiente](#preparando-o-ambiente)
    - [Criar um site](#criar-um-site)
    - [Projeto Django](#projeto-django)
-- [Redis - Armazenamento em memória](#redis-armazenamento-em-memoria)
+- [Redis - Armazenamento em memória](#redis---armazenamento-em-memoria)
 
 ## Configurando IIS para Django (Python)
 
