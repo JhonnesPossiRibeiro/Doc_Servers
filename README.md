@@ -2,7 +2,9 @@
 Documentação para configuração de servidores
 
 ## Sumário
-### Projeto Django
+- [Configurando IIS para Django (Python)](#Configurando IIS para Django (Python))
+- [Preparando o ambiente](#Preparando o ambiente)
+- [Criar um site](#Criar um site)
 
 ## Configurando IIS para Django (Python)
 
