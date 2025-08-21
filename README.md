@@ -166,6 +166,14 @@ if __name__ == "__main__":
 7. Com o Ubuntu e o redis rodando, execute o compando: ```python .\teste_redis.py```;
 8. Estando tudo certo, irá retornar Olá redis.
 
+### Executando o Redis automaticamente
+Para que o **Redis** execute automaticamete, siga os passos abaixo:
+
+1. Criar um serviço para o WSL iniciar junto ao windows:
+   * a) Abrir o **PowerShell**, vá até a pasta C:\Nssm\Win64;
+   * b) Crie um serviço: ```.\Nssm install WSL-Ubuntu```;
+   * c)  
+
 ## Nssm - o Gerenciador de Serviços Não-Sugador
 Para o funcioanmento do Celery, faz se necessário a instalação do serviço no Windows com **Nssm**, pois o mesmo não inicia-se sozinho.
 
