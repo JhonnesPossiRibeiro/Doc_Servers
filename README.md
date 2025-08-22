@@ -40,8 +40,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;▪ [Configurando o Celery](#configurando-o-celery)  
 &nbsp;&nbsp;&nbsp;&nbsp;▪ [Executando o CeleryWork automaticamente](#executando-o-celeryWork-automaticamente)  
 
-➤ [Git bash](#git-bash)  
-&nbsp;&nbsp;&nbsp;&nbsp;▪ [Instalar o Git bash](#instalar-o-git-bash)  
+➤ [Github](#git-hub)  
+&nbsp;&nbsp;&nbsp;&nbsp;▪ [Instalando o Git bash](#nstalando-o-git-bash)  
+&nbsp;&nbsp;&nbsp;&nbsp;▪ [Configurando o Git bash](#configurando-o-git-bash)  
+&nbsp;&nbsp;&nbsp;&nbsp;▪ [Gerando a chave SSH](#gerando-a-chave-ssh)  
+&nbsp;&nbsp;&nbsp;&nbsp;▪ [Configurando a chave SSH no Github](#configurando-a-chave-ssh-no-**Github**)  
+&nbsp;&nbsp;&nbsp;&nbsp;▪ [Testando a conexão do Git bash](#testando-a-conexão-do-git-bash)  
 
 ## Configurando IIS para Django (Python)
 
@@ -314,7 +318,7 @@ Configurando a chave SSH no **Github**:
   * a) Em uma conta **Github**, vá em **Setting** e depois em **SSH and GPG keys**;
   * b) Crie uma nova chave SSH, informe o nome da chave e cole a chave gerada.
 
-Testando a conexão do Git bash;
+Testando a conexão do Git bash:
   * a) Digite o comando: ```ssh -T git@github.com ```, estando tudo certo irá retornar ```Hi (nome no git)!```.
 
 
