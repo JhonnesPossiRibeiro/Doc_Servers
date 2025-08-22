@@ -6,7 +6,7 @@ Documentação para configuração de servidores
    - [Preparando o ambiente](#preparando-o-ambiente)
    - [Criar um site](#criar-um-site)
    - [Projeto Django](#projeto-django)
-- [Redis - Armazenamento em memória](#redis---armazenamento-em-memória)
+- [Redis](#redis)
 
 ## Configurando IIS para Django (Python)
 
@@ -107,7 +107,7 @@ Para publicar o projeto siga os passos abaixo:
 9. Para testar o projeto Django (Python): ```python manage.py runserver```;
    * a) Caso gere um erro, por exemplo: ModuleNotFoundError: No module named 'decouple', repetir os passos 6-b para instalar as pendências.
 
-## Redis - Armazenamento em memória
+## Redis
 Link de referência: https://redis.io/blog/redis-on-windows-10.
 
 Para a instalação do Redis no Windows Server 2022, seguir os passos abaixo:
