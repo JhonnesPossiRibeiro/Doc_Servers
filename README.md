@@ -7,6 +7,10 @@
   <img src="https://img.shields.io/badge/Oracle-DB-red?style=for-the-badge&logo=oracle&logoColor=white"/>
   <img src="https://img.shields.io/badge/IIS-Server-lightgrey?style=for-the-badge&logo=microsoft&logoColor=white"/>
   <img src="https://img.shields.io/badge/WSL-Enabled-green?style=for-the-badge&logo=linux&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Ubuntu-Linux-orange?style=for-the-badge&logo=ubuntu&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Redis-Cache-red?style=for-the-badge&logo=redis&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Git_Bash-Terminal-orange?style=for-the-badge&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/NSSM-Services-blueviolet?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge"/>
 </p>
 
@@ -20,14 +24,14 @@
 &nbsp;&nbsp;&nbsp;&nbsp;▪ [Projeto Django](#projeto-django)  
 
 ➤ [Redis](#redis)  
-&nbsp;&nbsp;&nbsp;&nbsp;▪ [Ativar o Wsl no servidor e instalar o Ubuntu](#ativar-o-Wsl-no-servidor-e-instalar-o-Ubuntu)  
+&nbsp;&nbsp;&nbsp;&nbsp;▪ [Ativar o Wsl no servidor e instalar o Ubuntu](#ativar-o-wsl-no-servidor-e-instalar-o-ubuntu)  
 &nbsp;&nbsp;&nbsp;&nbsp;▪ [Instalando e testando o Redis](#instalando-e-testando-o-redis)  
 &nbsp;&nbsp;&nbsp;&nbsp;▪ [Testando o redis no servidor](#testando-o-redis-no-servidor)  
 &nbsp;&nbsp;&nbsp;&nbsp;▪ [Executando o Redis automaticamente](#executando-o-redis-automaticamente)  
 
 ➤ [Nssm](#nssm)   
 &nbsp;&nbsp;&nbsp;&nbsp;▪ [Instalando Nssm](#instalando-nssm)  
-&nbsp;&nbsp;&nbsp;&nbsp;▪ [Criando, editando e deletando serviços](#criando,-editando-e-deletando-serviços)  
+&nbsp;&nbsp;&nbsp;&nbsp;▪ [Criando, editando e deletando serviços](#criando,-editando-e-deletando-servicos)  
 
 ## Configurando IIS para Django (Python)
 
