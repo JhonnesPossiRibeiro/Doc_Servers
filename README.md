@@ -1,3 +1,10 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Oracle-DB-red?style=for-the-badge&logo=oracle&logoColor=white"/>
+  <img src="https://img.shields.io/badge/IIS-Server-lightgrey?style=for-the-badge&logo=microsoft&logoColor=white"/>
+  <img src="https://img.shields.io/badge/WSL-Enabled-green?style=for-the-badge&logo=linux&logoColor=white"/>
+  <img src="https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge"/>
+</p>
 # Doc_Servers
 Documentação para configuração de servidores
 
@@ -7,7 +14,6 @@ Documentação para configuração de servidores
    - [Criar um site](#criar-um-site)
    - [Projeto Django](#projeto-django)
 - [Redis](#redis)
-- 
 
 ## Configurando IIS para Django (Python)
 
