@@ -287,14 +287,14 @@ Para que o **CeleryWork** consuma a fila do **Redis**, siga os passos abaixo:
         * Startup directory: ```D:\inetpub\wwwroot\App```;
         * Arguments: ```-m celery -A task worker --loglevel=info --pool=solo```;        
 
-## Git bash
-O Git bash esta sendo utilizado para um controle de versão no servidor. Para instalar e configurar, siga os passos abaixo:
+## Github
+Para instalar e configurar o Git bash, siga os passos abaixo:
 
-1. Instalar o Git bash:
+Instalando o Git bash:
    * a) Efetuar o download do Git bash: https://git-scm.com/downloads;
    * b) Instalar o Git bash no servidor de forma padrão;
 
-2. Configurar o Git bash:
+Configurando o Git bash:
   * a) Atere a porta ssh: ```nano ~/.ssh/config (acessa o config)```;
   * b) Edite o arquivo:
   ```
@@ -304,5 +304,10 @@ O Git bash esta sendo utilizado para um controle de versão no servidor. Para in
   User git
   ```
   Salve a alteração com crtl+S e feche com crtl+X;
-   * c) Gere a chave digitando o comando: ```ssh-keygen.exe```;
-   * d) 
+
+Gerando a chave SSH:
+  * a) Digite o comando no Gitbash: ```ssh-keygen.exe```;
+  * b) A senha deixe em branco;
+
+Configurando a chave SSH no **Github**:
+  * a) Em uma conta **Github**, vá em setting e depois em chaves SSh
