@@ -192,7 +192,7 @@ Para que o **Redis** execute automaticamete, siga os passos abaixo:
    * a) Execute o comando no WSL: ```sudo systemctl enable redis-server```;
    * b) Inicie o serviço: ```sudo systemctl start redis-server```;
 
-## Nssm - o Gerenciador de Serviços Não-Sugador
+## Nssm
 Para o funcioanmento do Celery, faz se necessário a instalação do serviço no Windows com **Nssm**, pois o mesmo não inicia-se sozinho.
 
 ### Instalando Nssm
