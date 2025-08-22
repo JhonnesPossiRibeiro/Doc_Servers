@@ -295,4 +295,14 @@ O Git bash esta sendo utilizado para um controle de versão no servidor. Para in
    * b) Instalar o Git bash no servidor de forma padrão;
 
 2. Configurar o Git bash:
-
+  * a) Atere a porta ssh: ```nano ~/.ssh/config (acessa o config)```;
+  * b) Edite o arquivo:
+  ```
+  Host github.com
+  Hostname ssh.github.com
+  Port 443
+  User git
+  ```
+  Salve a alteração com crtl+S e feche com crtl+X;
+   * c) Gere a chave digitando o comando: ```ssh-keygen.exe```;
+   * d) 
