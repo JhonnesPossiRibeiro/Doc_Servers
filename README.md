@@ -40,8 +40,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;▪ [Configurando o Celery](#configurando-o-celery)  
 &nbsp;&nbsp;&nbsp;&nbsp;▪ [Executando o CeleryWork automaticamente](#executando-o-celeryWork-automaticamente)  
 
-➤ [Github](#git-hub)  
-&nbsp;&nbsp;&nbsp;&nbsp;▪ [Instalando o Git bash](#nstalando-o-git-bash)  
+➤ [Github](#github)  
+&nbsp;&nbsp;&nbsp;&nbsp;▪ [Instalando o Git bash](#instalando-o-git-bash)  
 &nbsp;&nbsp;&nbsp;&nbsp;▪ [Configurando o Git bash](#configurando-o-git-bash)  
 &nbsp;&nbsp;&nbsp;&nbsp;▪ [Gerando a chave SSH](#gerando-a-chave-ssh)  
 &nbsp;&nbsp;&nbsp;&nbsp;▪ [Configurando a chave SSH no Github](#configurando-a-chave-ssh-no-**Github**)  
@@ -294,11 +294,11 @@ Para que o **CeleryWork** consuma a fila do **Redis**, siga os passos abaixo:
 ## Github
 Para instalar e configurar o Git bash, siga os passos abaixo:
 
-Instalando o Git bash:
+### Instalando o Git bash:
    * a) Efetuar o download do Git bash: https://git-scm.com/downloads;
    * b) Instalar o Git bash no servidor de forma padrão;
 
-Configurando o Git bash:
+### Configurando o Git bash:
   * a) Atere a porta ssh: ```nano ~/.ssh/config (acessa o config)```;
   * b) Edite o arquivo:
   ```
@@ -309,16 +309,16 @@ Configurando o Git bash:
   ```
   Salve a alteração com crtl+S e feche com crtl+X;
 
-Gerando a chave SSH:
+### Gerando a chave SSH:
   * a) Digite o comando no Gitbash: ```ssh-keygen.exe```;
   * b) A senha deixe em branco;
   * c) Copie o valor da chave gerada, com o comando cat e o caminho da chave publica gerada.
 
-Configurando a chave SSH no **Github**:
+### Configurando a chave SSH no **Github**:
   * a) Em uma conta **Github**, vá em **Setting** e depois em **SSH and GPG keys**;
   * b) Crie uma nova chave SSH, informe o nome da chave e cole a chave gerada.
 
-Testando a conexão do Git bash:
+### Testando a conexão do Git bash:
   * a) Digite o comando: ```ssh -T git@github.com ```, estando tudo certo irá retornar ```Hi (nome no git)!```.
 
 
