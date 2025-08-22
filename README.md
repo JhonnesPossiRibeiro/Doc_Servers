@@ -40,6 +40,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;▪ [Configurando o Celery](#configurando-o-celery)  
 &nbsp;&nbsp;&nbsp;&nbsp;▪ [Executando o CeleryWork automaticamente](#executando-o-celeryWork-automaticamente)  
 
+➤ [Git bash](#git-bash)  
+&nbsp;&nbsp;&nbsp;&nbsp;▪ [Instalar o Git bash](#instalar-o-git-bash)  
+
 ## Configurando IIS para Django (Python)
 
 ### Preparando o ambiente
@@ -284,5 +287,12 @@ Para que o **CeleryWork** consuma a fila do **Redis**, siga os passos abaixo:
         * Startup directory: ```D:\inetpub\wwwroot\App```;
         * Arguments: ```-m celery -A task worker --loglevel=info --pool=solo```;        
 
+## Git bash
+O Git bash esta sendo utilizado para um controle de versão no servidor. Para instalar e configurar, siga os passos abaixo:
 
+1. Instalar o Git bash:
+   * a) Efetuar o download do Git bash: https://git-scm.com/downloads;
+   * b) Instalar o Git bash no servidor de forma padrão;
+
+2. Configurar o Git bash:
 
