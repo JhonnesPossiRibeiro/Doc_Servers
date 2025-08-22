@@ -16,7 +16,7 @@
 </p>
 
 ## 📌 Status do Projeto  
-:warning: **Em desenvolvimento**
+:heavy_check_mark: **Concluído**
 
 ## Tópicos
 ➤ [Configurando IIS para Django (Python)](#configurando-iis-para-django-python)  
