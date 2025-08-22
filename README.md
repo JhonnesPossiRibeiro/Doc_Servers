@@ -9,8 +9,9 @@
   <img src="https://img.shields.io/badge/WSL-Enabled-green?style=for-the-badge&logo=linux&logoColor=white"/>
   <img src="https://img.shields.io/badge/Ubuntu-Linux-orange?style=for-the-badge&logo=ubuntu&logoColor=white"/>
   <img src="https://img.shields.io/badge/Redis-Cache-red?style=for-the-badge&logo=redis&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Git_Bash-Terminal-orange?style=for-the-badge&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Celery-TaskQueue-darkgreen?style=for-the-badge&logo=celery&logoColor=white"/>  
   <img src="https://img.shields.io/badge/NSSM-Services-blueviolet?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Git_Bash-Terminal-orange?style=for-the-badge&logo=git&logoColor=white"/>
   <img src="https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge"/>
 </p>
 
@@ -31,7 +32,13 @@
 
 ➤ [Nssm](#nssm)   
 &nbsp;&nbsp;&nbsp;&nbsp;▪ [Instalando Nssm](#instalando-nssm)  
-&nbsp;&nbsp;&nbsp;&nbsp;▪ [Criando, editando e deletando serviços](#criando,-editando-e-deletando-servicos)  
+&nbsp;&nbsp;&nbsp;&nbsp;▪ [Gerenciando o Nssm](#gerenciando-o-nssm)  
+
+➤ [Celery](#redis)  
+&nbsp;&nbsp;&nbsp;&nbsp;▪ [Celery](#celery)  
+&nbsp;&nbsp;&nbsp;&nbsp;▪ [Instalando o pacote Celery](#instalando-o-pacote-celery)  
+&nbsp;&nbsp;&nbsp;&nbsp;▪ [Configurando o Celery](#configurando-o-celery)  
+&nbsp;&nbsp;&nbsp;&nbsp;▪ [Executando o CeleryWork automaticamente](#executando-o-celeryWork-automaticamente)  
 
 ## Configurando IIS para Django (Python)
 
@@ -227,12 +234,12 @@ Para instalar o **Nssm** siga os passos abaixo:
 2. Descompactar o conteúdo e de preferência no caminho C:\Nssm;
 3. Na pasta C:\Nssm\Win64, execute o Nssm.exe, ele irá informar os comandos.
 
-### Criando, editando e deletando serviços
+### Gerenciando o Nssm
 
 1. Execute o **PowerShell** com admin e vá até a pasta onde esta o Nssm.exe;
 2. Execute o comando listado na aplicação iniciando com ```.\```, por exemplo: ```.\nssm edit <servicename>```.
 
-## Celery - Sistema em fila de tarefas
+## Celery
 Link da documentação referência: https://docs.celeryq.dev/en/v5.5.3/getting-started/introduction.html
 Para a utlização do Celery no projeto Django (Python), siga os passo abaixo:
 
