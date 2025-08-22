@@ -20,14 +20,14 @@
 &nbsp;&nbsp;&nbsp;&nbsp;▪ [Projeto Django](#projeto-django)  
 
 ➤ [Redis](#redis)  
-&nbsp;&nbsp;&nbsp;&nbsp;▪ [Ativar o Wsl no servidor e instalar o Ubuntu](#ativar-o-Wsl-no-servidor-e-instalar-o-Ubuntu) 
-&nbsp;&nbsp;&nbsp;&nbsp;▪ [Instalando e testando o Redis](#instalando-e-testando-o-redis)
-&nbsp;&nbsp;&nbsp;&nbsp;▪ [Testando o redis no servidor](#testando-o-redis-no-servidor)
-&nbsp;&nbsp;&nbsp;&nbsp;▪ [Executando o Redis automaticamente](#executando-o-redis-automaticamente)
+&nbsp;&nbsp;&nbsp;&nbsp;▪ [Ativar o Wsl no servidor e instalar o Ubuntu](#ativar-o-Wsl-no-servidor-e-instalar-o-Ubuntu)  
+&nbsp;&nbsp;&nbsp;&nbsp;▪ [Instalando e testando o Redis](#instalando-e-testando-o-redis)  
+&nbsp;&nbsp;&nbsp;&nbsp;▪ [Testando o redis no servidor](#testando-o-redis-no-servidor)  
+&nbsp;&nbsp;&nbsp;&nbsp;▪ [Executando o Redis automaticamente](#executando-o-redis-automaticamente)  
 
-➤ [Nssm](#nssm)  
-&nbsp;&nbsp;&nbsp;&nbsp;▪ [Instalando Nssm](#instalando-nssm)
-&nbsp;&nbsp;&nbsp;&nbsp;▪ [Criando, editando e deletando serviços](#criando,-editando-e-deletando-serviços)
+➤ [Nssm](#nssm)   
+&nbsp;&nbsp;&nbsp;&nbsp;▪ [Instalando Nssm](#instalando-nssm)  
+&nbsp;&nbsp;&nbsp;&nbsp;▪ [Criando, editando e deletando serviços](#criando,-editando-e-deletando-serviços)  
 
 ## Configurando IIS para Django (Python)
 
