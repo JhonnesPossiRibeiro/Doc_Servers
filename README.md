@@ -10,7 +10,10 @@
   <img src="https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge"/>
 </p>
 
-## Sumário
+## 📌 Status do Projeto  
+:warning: **Em desenvolvimento**
+
+## Tópicos
 - [Configurando IIS para Django (Python)](#configurando-iis-para-django-python)
    - [Preparando o ambiente](#preparando-o-ambiente)
    - [Criar um site](#criar-um-site)
