@@ -308,6 +308,13 @@ Configurando o Git bash:
 Gerando a chave SSH:
   * a) Digite o comando no Gitbash: ```ssh-keygen.exe```;
   * b) A senha deixe em branco;
+  * c) Copie o valor da chave gerada, com o comando cat e o caminho da chave publica gerada.
 
 Configurando a chave SSH no **Github**:
-  * a) Em uma conta **Github**, vá em setting e depois em chaves SSh
+  * a) Em uma conta **Github**, vá em **Setting** e depois em **SSH and GPG keys**;
+  * b) Crie uma nova chave SSH, informe o nome da chave e cole a chave gerada.
+
+Testando a conexão do Git bash;
+  * a) Digite o comando: ```ssh -T git@github.com ```, estando tudo certo irá retornar ```Hi (nome no git)!```.
+
+
